@@ -21,6 +21,7 @@ source 'https://rubygems.org'
  gem 'turbolinks'
  gem 'bootstrap'
  gem 'figaro'
+ gem 'devise'
  gem 'pry'
 
  group :development, :test do

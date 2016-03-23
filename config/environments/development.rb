@@ -38,4 +38,16 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+  # host = 'blocitoff2-mbattur.c9users.io'
+  # config.action_mailer.default_url_options = { host: host }
+  config.action_mailer.default_url_options = { host: 'blocitoff2-mbattur.c9users.io/', port: $PORT, protocol: 'https' }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+  :user_name => '5565416fd359bfdd7',
+  :password => 'db180388de484c',
+  :address => 'mailtrap.io',
+  :domain => 'mailtrap.io',
+  :port => '2525',
+  :authentication => :cram_md5
+}
 end
