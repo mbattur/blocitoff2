@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
  
- #alias rs="rails s -p $PORT -b $IP"
- # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
  gem 'rails', '4.2.5'
  
  group :production do
