@@ -1,4 +1,4 @@
-Rails.application.configure do
+blocitoff2::application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
@@ -75,7 +75,7 @@ Rails.application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # Do not dump schema after migrations.
-  #config.active_record.dump_schema_after_migration = false
+  config.active_record.dump_schema_after_migration = false
   
   Rails.application.routes.default_url_options[:host] = 'whispering-island-52928.herokuapp.com'
   config.action_mailer.delivery_method = :smtp
