@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   get 'welcome/about'
   
   root 'welcome#index'
+  
+  resources :users, only: [:show]
 end
