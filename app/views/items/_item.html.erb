@@ -1,0 +1,4 @@
+<%= content_tag :div, id: "item-#{item.id}" do %>
+  <p class='pull-left'><%= link_to "", [current_user, item] %></p>
+  <h5 class='list-group-item-heading'><%= item.name %></h5> 
+<% end %>
