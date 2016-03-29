@@ -20,7 +20,6 @@ source 'https://rubygems.org'
  gem 'bootstrap'
  gem 'figaro'
  gem 'devise'
- gem 'pry'
 
  group :development, :test do
    gem 'byebug'
@@ -30,4 +29,5 @@ source 'https://rubygems.org'
    gem 'shoulda'
    gem 'faker'
    gem 'factory_girl_rails'
+   gem 'pry'
  end
