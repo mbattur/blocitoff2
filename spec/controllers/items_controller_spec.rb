@@ -39,7 +39,7 @@ RSpec.describe ItemsController, type: :controller do
 
     it "redirects to the new item" do
       post :create, item: {name: RandomData.random_sentence}
-      expect(response).to redirect_to Item.last
+      expect(response).to redirect_to user_path(current_user)
     end
   end
 end
