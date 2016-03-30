@@ -13,6 +13,12 @@
       <% end %>
       <div class="media-body">
         <h2 class="media-heading"><%= @user.email %></h2>
+        <table class="table table-hover">
+          <tr>
+            <th>Item</th>
+           </tr> 
+          <%= render @items %>
+        </table>
       </div>
     </div>
   </div>
