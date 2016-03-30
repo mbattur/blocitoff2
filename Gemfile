@@ -29,5 +29,6 @@ source 'https://rubygems.org'
    gem 'shoulda'
    gem 'faker'
    gem 'factory_girl_rails'
+   gem 'simplecov'
    gem 'pry'
  end
