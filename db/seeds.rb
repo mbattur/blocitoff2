@@ -9,5 +9,14 @@ MAX_USERS = 5
   )
 end
 
+MAX_ITEMS = 10
+
+([0, (MAX_ITEMS - Item.count)].max).times do
+  Item.create!(
+    name: Faker::Lorem.characters(10)
+  )
+end
+
 puts "Seed finished"
 puts "#{User.count} users created"
+puts "#{Item.count} items created"
