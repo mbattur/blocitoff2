@@ -80,11 +80,11 @@ Rails.application.configure do
   Rails.application.routes.default_url_options[:host] = 'whispering-island-52928.herokuapp.com'
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    :user_name => '57bb8a3de9ada9',
-    :password => 'bd51776ffa5ba7',
-    :address => 'mailtrap.io',
-    :domain => 'mailtrap.io',
-    :port => '2525',
-    :authentication => :cram_md5
-  }
+  :user_name => '02e8b4bfd7e82b',
+  :password => '7de35ee3be1741',
+  :address => 'mailtrap.io',
+  :domain => 'mailtrap.io',
+  :port => '2525',
+  :authentication => :cram_md5
+}
 end
