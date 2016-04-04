@@ -17,14 +17,17 @@ class ItemsController < ApplicationController
   end
   
   def destroy
-    @item = current_user.items.find(params[:id])
+    @item = Item.find(params[:id])
     
     if @item.destroy
       flash[:notice] = "Item was deleted successfully."
-      redirect_to user_path(current_user)
     else
-      flash.now[:alert] = "There was an error deleting the item."
-      render :new
+      flash[:alert] = "There was an error deleting the item."
+    end
+    
+    respond_to do |format|
+      format.html
+      format.js
     end
   end
   

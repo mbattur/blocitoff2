@@ -39,15 +39,15 @@ RSpec.describe ItemsController, type: :controller do
   end
   
   describe "DELETE destroy" do
-    # it "deletes the item" do
-    #   delete :destroy, user_id: my_user.id, id: my_item.id
-    #   count = Item.where({id: my_item.id}).size
-    #   expect(count).to eq 0
-    # end
+    it "deletes the item" do
+      delete :destroy, format: :js, user_id: my_user.id, id: my_item.id
+      count = Item.where({id: my_item.id}).count
+      expect(count).to eq 0
+    end
     
-    # it "redirects to item list" do
-    #   delete :destroy, user_id: my_user.id, id: my_item.id
-    #   expect(response).to redirect_to user_path(current_user)
-    # end
+    it "returns http success" do
+      delete :destroy, format: :js, user_id: my_user.id, id: my_item.id
+      expect(response).to have_http_status(:success)
+    end
   end
 end
