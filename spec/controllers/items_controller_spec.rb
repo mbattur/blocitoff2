@@ -37,4 +37,17 @@ RSpec.describe ItemsController, type: :controller do
       expect(assigns(:item)).to eq Item.last
     end
   end
+  
+  describe "DELETE destroy" do
+    # it "deletes the item" do
+    #   delete :destroy, user_id: my_user.id, id: my_item.id
+    #   count = Item.where({id: my_item.id}).size
+    #   expect(count).to eq 0
+    # end
+    
+    # it "redirects to item list" do
+    #   delete :destroy, user_id: my_user.id, id: my_item.id
+    #   expect(response).to redirect_to user_path(current_user)
+    # end
+  end
 end
