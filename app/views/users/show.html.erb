@@ -7,9 +7,6 @@
         <div class="media-left">
           <%= image_tag avatar_url, class: 'media-object' %>
         </div>
-        <div style='margin-top: 15px;'>
-          <%= render partial: 'items/item', locals: { user: @user, item: @item } %>
-        </div>
       <% end %>
       <div class="media-body">
         <h4 class="media-heading"><%= @user.email %></h4>
@@ -18,7 +15,7 @@
           <tr>
             <th>Item</th>
             <th>Days Left</th>
-            <th>Completed</th>
+            <th>Check When Completed</th>
           </tr> 
           <%= render @items %>
         </table>
